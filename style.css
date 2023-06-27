@@ -1,0 +1,238 @@
+body   {
+    margin: 0;
+    font-size: 16px;
+    font-family: "Hanken Grotestk", sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+
+    height: 550px;
+    width: 800px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.blue {
+    background:linear-gradient(#7857FF,#2e2be9);
+    flex: 1;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.white {
+    
+    flex: 1;
+}
+
+p {
+    margin: 0 60px;
+    text-align: center;
+    color: #e0e0e0;
+
+}
+
+h3 {
+    color: #e0e0e0 ;
+
+}
+
+.result {
+
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+
+    font-size: 72px;
+    margin: 0;
+    font-weight: 700;
+
+}
+
+.summary {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+}
+
+.reaction {
+    height: 60px;
+    width: 300px;
+    background-color: hsla(0, 100%, 67%,0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.reaction-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: hsla(0, 100%, 67%,1);
+    font-weight: 700;
+}
+
+.title {
+    color: #555555;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.test-result {
+    margin: 0;
+    font-weight: 700;
+    color:#555555;
+
+}
+
+.test-result span {
+
+    color: #aaaaaa ;
+}
+
+
+.memory {
+    height: 60px;
+    width: 300px;
+    background-color: hsla(39, 100%, 56%,0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.memory-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsla(39, 100%, 56%,1);
+    gap: 5px;
+    font-weight: 700;
+}
+
+.verbal {
+    height: 60px;
+    width: 300px;
+    background-color: hsla(166, 100%, 37%, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.verbal-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsla(166, 100%, 37%,1);
+    gap: 5px;
+    font-weight: 700;
+}
+
+.visual {
+
+    height: 60px;
+    width: 300px;
+    background-color: hsla(234, 85%, 45%,0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.visual-text {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:hsla(234, 85%, 45%,1);
+    gap: 5px;
+    font-weight: 700;
+}
+
+.continue {
+    border-radius: 60px;
+    background-color: hsl(224, 30%, 27%);
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 300px;
+    color: white;
+    border: 0;
+}
+
+.continue:hover {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 1));
+    cursor: pointer;
+  }
+
+  @media (max-width: 500px) {
+    .box {
+        flex-direction: column;
+        height: 1100px;
+        border-radius: 0;
+        width: 100%;
+    }
+    .container {
+        height: unset;
+       
+    }
+    .blue {
+        border-radius: 0 0 50px 50px;
+    }
+    .continue {
+        width: 250px;
+    }
+    .reaction {
+        width: 85%;
+    }
+    .visual{
+        width: 85%;
+
+    }
+    .memory {
+        width: 85%;
+    }
+    .verbal {
+        width: 85%;
+    }
+  }
